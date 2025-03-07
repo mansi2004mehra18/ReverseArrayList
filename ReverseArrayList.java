@@ -14,10 +14,14 @@ public class ReverseArrayList {
         System.out.println(list);
 
         //reverse of an arraylist
-        int n = list.size();
-        // System.out.println(n);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(n - i - 1) + " ");
+        // int n = list.size();
+        // for (int i = 0; i < list.size(); i++) {
+        //     System.out.print(list.get(n - i - 1) + " ");
+        // }
+        //                     or
+        for (int i = list.size() - 1; i >= 0; i--) {
+            System.out.print(list.get(i) + " ");
         }
+        System.out.println();
     }
 }
